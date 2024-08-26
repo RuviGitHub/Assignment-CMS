@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Font styles */
+    --font-sans: 'Barlow', sans-serif;
+  
+    /* Headings */
+    --heading-lg: 28px;
+    --heading-md: 20px;
+  
+    /* Body sizes */
+    --body-lg: 16px;
+    --body-md: 14px;
+    --body-sm: 12px;
+  
+    /* Font Weights */
+    --weight-regular: 200;
+    --weight-medium: 400;
+    --weight-semi: 600;
+    --weight-bold: 800;
+
+    /* Radius */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Typography utility classes */
+.heading-lg { font-size: var(--heading-lg); font-weight: var(--weight-bold); }
+.heading-md { font-size: var(--heading-md); font-weight: var(--weight-bold); }
+
+.body-lg-semi { font-size: var(--body-lg); font-weight: var(--weight-semi); }
+.body-lg-medium { font-size: var(--body-lg); font-weight: var(--weight-medium); }
+.body-lg-regular { font-size: var(--body-lg); font-weight: var(--weight-regular); }
+
+.body-md-semi { font-size: var(--body-md); font-weight: var(--weight-semi); }
+.body-md-medium { font-size: var(--body-md); font-weight: var(--weight-medium); }
+.body-md-regular { font-size: var(--body-md); font-weight: var(--weight-regular); }
+
+.body-sm-semi { font-size: var(--body-sm); font-weight: var(--weight-semi); }
+.body-sm-medium { font-size: var(--body-sm); font-weight: var(--weight-medium); }
+.body-sm-regular { font-size: var(--body-sm); font-weight: var(--weight-regular); }
